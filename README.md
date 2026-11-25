@@ -1,5 +1,7 @@
 # restockcheck-mcp
 
+[![RestockCheck Public Telemetry MCP server](https://glama.ai/mcp/servers/yangjwlove-dev/restockcheck-mcp/badges/card.svg)](https://glama.ai/mcp/servers/yangjwlove-dev/restockcheck-mcp)
+
 A lightweight, read-only [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server exposing public Apple Store pickup availability, restock summaries, and CC BY 4.0 service reliability telemetry from [RestockCheck](https://restockcheck.com).
 
 Calls only anonymous, read-only `/api/stock/public/...` JSON endpoints — no API keys, no user accounts, no credentials, and no write actions.
