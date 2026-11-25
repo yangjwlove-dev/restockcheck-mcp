@@ -1,0 +1,54 @@
+{
+  "manifest_version": "0.2",
+  "name": "restockcheck-mcp",
+  "display_name": "RestockCheck Public Telemetry MCP",
+  "version": "0.1.0",
+  "description": "Read-only MCP server for public Apple Store pickup availability, restock summaries, and CC BY 4.0 service reliability telemetry.",
+  "author": {
+    "name": "RestockCheck",
+    "url": "https://restockcheck.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yangjwlove-dev/restockcheck-mcp"
+  },
+  "homepage": "https://restockcheck.com",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "apple-store",
+    "pickup-stock",
+    "restock",
+    "telemetry",
+    "read-only"
+  ],
+  "server": {
+    "type": "node",
+    "entry_point": "dist/cli.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/dist/cli.js"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "list_monitored_apple_stores",
+      "description": "Lists live-tracked hub Apple Stores (filterable by country us/gb/jp/cn) with polling tier and live pickup availability summary."
+    },
+    {
+      "name": "get_store_pickup_status",
+      "description": "Fetches live pickup status, per-configuration availability, and recent restock history for a specific monitored Apple Store."
+    },
+    {
+      "name": "get_restock_summary",
+      "description": "Returns live public restock summary metrics including in-stock counts by country, 24h/7d restock totals, and observation freshness."
+    },
+    {
+      "name": "get_service_reliability_report",
+      "description": "Returns CC BY 4.0 check interval quantiles (P50/P90/P95), sample sizes, alert dispatch latency, and optional per-store health status."
+    }
+  ]
+}

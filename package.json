@@ -1,0 +1,60 @@
+{
+  "name": "restockcheck-mcp",
+  "version": "0.1.0",
+  "description": "Read-only MCP server for public Apple Store pickup availability, restock summaries, and CC BY 4.0 service reliability telemetry from RestockCheck.",
+  "mcpName": "io.github.yangjwlove-dev/restockcheck-mcp",
+  "homepage": "https://restockcheck.com",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "restockcheck-mcp": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "server.json",
+    "manifest.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangjwlove-dev/restockcheck-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yangjwlove-dev/restockcheck-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "apple-store",
+    "pickup-stock",
+    "restock",
+    "telemetry",
+    "read-only"
+  ],
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && chmod +x dist/cli.js",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "test": "vitest run",
+    "smoke": "node scripts/live-smoke.mjs",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  }
+}
