@@ -85,6 +85,7 @@ npx @modelcontextprotocol/inspector node dist/cli.js
 - Zero authentication tokens, zero environment variables required, and zero write operations.
 - Service reliability telemetry is published under CC BY 4.0 by [RestockCheck](https://restockcheck.com).
 - Archived CC BY 4.0 benchmark snapshots: [Zenodo DOI `10.5281/zenodo.24523167`](https://zenodo.org/records/24523167) · [Harvard Dataverse DOI `10.7910/DVN/MZFTCB`](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MZFTCB) · [Dataset Source](https://github.com/yangjwlove-dev/apple-store-pickup-restock-dataset).
+- Related CLI tool: [`apple-pickup-cli`](https://github.com/yangjwlove-dev/apple-pickup-cli) — zero-dependency terminal CLI for live Apple Store pickup checks and Bark / Discord / Slack / Telegram restock alerts.
 
 ## License
 
