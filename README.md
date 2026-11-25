@@ -82,6 +82,7 @@ npx @modelcontextprotocol/inspector node dist/cli.js
 - Reads strictly from public anonymous JSON routes: `/api/stock/public/stores`, `/api/stock/public/store/<country>/<slug>`, `/api/stock/public/summary`, and `/api/stock/public/service-report`.
 - Zero authentication tokens, zero environment variables required, and zero write operations.
 - Service reliability telemetry is published under CC BY 4.0 by [RestockCheck](https://restockcheck.com).
+- Archived CC BY 4.0 benchmark snapshots: [Zenodo DOI `10.5281/zenodo.24523167`](https://zenodo.org/records/24523167) · [Harvard Dataverse DOI `10.7910/DVN/MZFTCB`](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MZFTCB) · [Dataset Source](https://github.com/yangjwlove-dev/apple-store-pickup-restock-dataset).
 
 ## License
 
